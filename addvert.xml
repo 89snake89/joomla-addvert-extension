@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="plugin" group="content">
+	<name>plg_content_addvert</name>
+	<author>Fabio Bottan</author>
+	<creationDate>October 2014</creationDate>
+	<copyright>Copyright (C) 2005 - 2014 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>bottanfabio@hotmail.it</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>2.5.0</version>
+	<description>PLG_ADDVERT_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="addvert">addvert.php</filename>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="en-GB">en-GB.plg_content_addvert.ini</language>
+		<language tag="en-GB">en-GB.plg_content_addvert.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="SETTINGS">
+				<field name="button-dimension" type="list" default="standard"
+					description="PLG_ADDVERT_FIELD_DIMENSION_DESC" label="PLG_ADDVERT_FIELD_DIMENSION_LABEL">
+					<option value="standard">PLG_ADDVERT_FIELD_VALUE_BUTTON_DIMENSION_STANDARD</option>
+					<option value="small">PLG_ADDVERT_FIELD_VALUE_BUTTON_DIMENSION_SMALL</option>
+				</field>
+				<field name="addvert-website-url" type="textbox" label="PLG_ADDVERT_FIELD_URL_SITO_WEB_ADDVERT"></field>
+				<field name="addvert-id" type="textbox" label="addvert-id"></field>
+				<field name="addvert-secret" type="textbox" label="addvert-secret"></field>
+				<field name="ecommerce-id" type="textbox" label="id e-commerce addvert"></field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
